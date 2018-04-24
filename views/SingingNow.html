@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Make site responsive on mobile/tablet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+    <title>Сейчас поёт</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/SingingNow.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+          integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container">
+    <h1>Сейчас поёт</h1>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <img class="img-responsive" src="https://images.ua.prom.st/733996561_w0_h0_b95a4b26427049__ceb222a753.jpg">
+            <p class="text-center">Лёша</p>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+            <div>
+                <p>Моё лучшее исполнение: ни разу</p>
+                <div class="text-right">
+                    <button type="button" class="btn btn-primary">Хочу спеть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input id="stars" value="4" type="text" class="rating" required title="">
+    <div class="clearfix"></div>
+    <textarea class="form-control" rows="3" placeholder="Оставить комментарий" required="" autofocus=""></textarea>
+    <button type="button" class="btn btn-default"><span class="fab fa-android"></span><br> Лучшее исполнение</button>
+    <button type="button" class="btn btn-default"><span class="fas fa-child"></span><br> Супер голос</button>
+
+    <!--<button type="button" class="btn btn-success icon-android"> Лучшее исполнение </button>
+    <button type="button" class="btn btn-warning icon-user"> Супер голос </button>-->
+</div>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../assets/js/star-rating.js" type="text/javascript"></script>
+<script>
+    $("#stars").rating({min: 1, max: 10, size: 'sm', showCaption: false, showClear: false});
+</script>
+</body>
+</html>

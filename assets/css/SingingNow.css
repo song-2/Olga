@@ -1,0 +1,43 @@
+h1{
+    color: red;
+    text-align: center;
+}
+
+.form-control{
+    margin-bottom: 10px;
+}
+
+.fab {
+    font-size: xx-large;
+    color: greenyellow;
+}
+
+.fas {
+    font-size: xx-large;
+    color: orange;
+}
+
+.btn {
+    border: 0px solid transparent;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+.table{
+    margin-top: 20px;
+}
+
+select{
+    width: 230px;
+}
+
+.btn-group label{
+    width: 145px;
+}
+
+.btn-group{
+    margin-top: 20px;
+}

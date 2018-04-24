@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Make site responsive on mobile/tablet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/SingingNow.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+          integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container">
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="newPlaces">
+        <label class="form-check-label" for="newPlaces">
+            Не посещенные мной
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="friendsCheckIn">
+        <label class="form-check-label" for="friendsCheckIn">
+            В которых сегодня мои друзья
+        </label>
+    </div>
+    <div id="map">
+        <script>
+            function initMap() {
+                var uluru = {lat: -25.363, lng: 131.044};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 4,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPC_plSai-D-LAbyMYkK68rXIFr0mbths&callback=initMap">
+        </script>
+    </div>
+    <div id="adress">
+        <p>
+        <h3>1. Ленинградский проспект, 31</h3>
+        Уютный общий зал порадует Вас профессиональным звуком, европейской кухней, изысканной коктейльной картой,
+        очередь не более 15 минут, акции каждый день, потрясающая атмосфера, приветливый и дружный персонал.
+        </p>
+        <p>
+        <h3>2. Фридриха Энгельса, 75 стр 5</h3>
+        Караоке "Соло" – идеальное место для проведения дружеских встреч, свиданий, корпоратива, дня рождения
+        ,мальчишника и девичника, станем любимым Вашим караоке, потому что мы создаем это желание вернуться к нам вновь
+        и вновь.
+        </p>
+    </div>
+
+
+</div>
+
+</body>
+</html>
